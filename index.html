@@ -536,7 +536,7 @@
     };
 
     // -------------------- КОЛЕСО ФОРТУНЫ --------------------
-    const prizes = ["🌸 Доп. выходной", "💐 Премия 7000 кредитов", "📖 Бесплатный семинар", "🏅 Благодарность от шефа", "🍃 Кофе-брейк", "⭐ Ускоренное повышение", "🚔 Солнцезащитный комплект", "🎲 Доп. билет колеса"];
+    const prizes = ["🌸 Доп. выходной", "💐 Премия 7000$", "📖 Премия 10000$", "🏅 Благодарность от шефа", "🍃 1 Репутация", "⭐ 2 Репутации", "🚔 15000$", "🎲 Доп. билет колеса"];
     function getRandomPrize() { return prizes[Math.floor(Math.random() * prizes.length)]; }
 
     function showFortuneWheel() {
@@ -546,7 +546,7 @@
                 <p><i class="fas fa-seedling"></i> Вращайте колесо и получите бонус!</p>
                 <button id="spinWheelBtn" class="wheel-btn" style="background:#ffcf8a; border:none;"><i class="fas fa-sync-alt"></i> КРУТИТЬ</button>
                 <div id="prizeDisplay" class="prize-result">🌸 Нажмите "Крутить"</div>
-                <div class="small-note">* Бонусы утверждаются приказом начальника LSPD.</div>
+                <div class="small-note">* Призы выдает генерал.</div>
             </div>`;
         const spinBtn = document.getElementById('spinWheelBtn');
         if (spinBtn) spinBtn.onclick = () => {
